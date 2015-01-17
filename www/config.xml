@@ -8,7 +8,7 @@
         Shoukat Hayat
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
-    <preference name="permissions" value="none" />
+    <preference name="permissions" value="true" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
@@ -49,13 +49,15 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
     <gap:plugin name="org.apache.cordova.contacts" />
+	<plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
 	<!--<gap:plugin name="org.apache.cordova.Device"/>-->
 	<!--<gap:plugin name="org.apache.cordova.NetworkManager" />
 	<gap:plugin name="Battery" value="org.apache.cordova.core.BatteryListener" />
 	<gap:plugin name="Accelerometer" value="org.apache.cordova.core.AccelListener" />
 	<gap:plugin name="Compass" value="org.apache.cordova.core.CompassListener" />
 	<gap:plugin name="Geolocation" value="org.apache.cordova.core.GeoBroker" />
-	--><gap:plugin name="org.apache.cordova.Camera" />
+	-->
+	<!--<gap:plugin name="org.apache.cordova.Camera" />-
 	<gap:plugin name="Media" value="org.apache.cordova.core.AudioHandler" />
 	<gap:plugin name="Capture" value="org.apache.cordova.core.Capture" />
 	<gap:plugin name="File" value="org.apache.cordova.core.FileUtils" />
@@ -65,5 +67,5 @@
 	<gap:plugin name="Contacts" value="org.apache.cordova.core.ContactManager" />
 	<gap:plugin name="Globalization" value="org.apache.cordova.core.globalization" />
 	<gap:plugin name="SplashScreen" value="org.apache.cordova.core.SplashScreen" />
-	<gap:plugin name="InAppBrowser" value="org.apache.cordova.core.InAppBrowser" />
+	<gap:plugin name="InAppBrowser" value="org.apache.cordova.core.InAppBrowser" />-->
 </widget>
