@@ -49,7 +49,7 @@
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
     <gap:plugin name="org.apache.cordova.contacts" />
-	<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
+	<gap:plugin name="Device" value="org.apache.cordova.Device"/>
 	<gap:plugin name="NetworkStatus" value="org.apache.cordova.core.NetworkManager" />
 	<gap:plugin name="Battery" value="org.apache.cordova.core.BatteryListener" />
 	<gap:plugin name="Accelerometer" value="org.apache.cordova.core.AccelListener" />
