@@ -5,10 +5,10 @@ var destinationType; // sets the format of returned value
 
 function onDeviceReady() {
     // we will not be doing anything!!
-	alert('onDeviceReadystart');
+	//alert('onDeviceReadystart');
 	pictureSource=navigator.camera.PictureSourceType;
     destinationType=navigator.camera.DestinationType;
-	alert('onDeviceReadyend');
+	//alert('onDeviceReadyend');
 }
 
 $(document).on("pageshow", function () {
@@ -147,7 +147,7 @@ function onPhotoFileSuccess(imageData) {
 // Called when a photo is successfully retrieved
 //
 function onPhotoURISuccess(imageURI) {
-	alert('onPhotoURISuccess');
+	//alert('onPhotoURISuccess');
   // Uncomment to view the image file URI 
   // console.log(imageURI);
 
@@ -168,7 +168,7 @@ function onPhotoURISuccess(imageURI) {
 // A button will call this function
 //
 function capturePhotoWithData() {
-	alert('capturePhotoWithData');
+	//alert('capturePhotoWithData');
   // Take picture using device camera and retrieve image as base64-encoded string
   //navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50 });
   navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
@@ -176,14 +176,17 @@ function capturePhotoWithData() {
 }
 
 function capturePhotoWithFile() {
-	alert('capturePhotoWithFile');
+	//alert('capturePhotoWithFile');
 	navigator.camera.getPicture(onPhotoFileSuccess, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
 }
-
+function capturePhotoEdit() {
+  // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
+  navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true }); 
+}
 // A button will call this function
 //
 function getPhoto(source) {
-	alert('getPhoto');
+	//alert('getPhoto');
   // Retrieve image file location from specified source
   navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
 	destinationType: destinationType.FILE_URI,
