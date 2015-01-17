@@ -211,7 +211,7 @@ function dropbox_fileChange() { }
 function uploadfile(){
 	alert("Hallo ok 1");
 try{
-	window.DropboxSync.checkLink(function() { // success
+	DropboxSync.checkLink(function() { // success
 		alert("Hallo ok");
     // User is already authenticated with Dropbox.
 	}, function() { // fail
@@ -226,7 +226,7 @@ try{
 }catch(e){alert(e);}
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';
-	window.DropboxSync.prototype.uploadFile(optionsarray);
+	DropboxSync.prototype.uploadFile(optionsarray);
 }
 /*
 // Called when a photo is successfully retrieved
