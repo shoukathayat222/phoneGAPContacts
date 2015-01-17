@@ -106,7 +106,7 @@ function resetPage() {
     $("#number").val("");
 }
 
-/*
+
 // Called when a photo is successfully retrieved
 //
 function onPhotoDataSuccess(imageData) {
@@ -195,8 +195,8 @@ function getPhoto(source) {
 function onFail(message) {
   alert('Failed because: ' + message);
 }
-*/
 
+/*
 // Called when a photo is successfully retrieved
 //
 function onPhotoDataSuccess(imageData) {
@@ -254,3 +254,4 @@ function getPhoto(source) {
 function onFail(message) {
   alert('Failed because: ' + message);
 }
+*/
