@@ -198,7 +198,34 @@ function getPhoto(source) {
 function onFail(message) {
   alert('Failed because: ' + message);
 }
+  <script>
+
+    function dropbox_linked() { }
+// Called from the onActivityResult method in the plugin when linking is successful.
+function dropbox_onSyncStatusChange(status) { }
+// Called by observer in the plugin when there's a change 
+// to the status of background synchronization (download/upload).
+// status is a string variable that will be 'sync' or 'none'.
+function dropbox_fileChange() { }
+// Called by observer in the plugin when a file is changed.
+
+
 function uploadfile(){
+	
+try{
+	DropboxSync.checkLink(function() { // success
+		alert("Hallo ok");
+    // User is already authenticated with Dropbox.
+	}, function() { // fail
+		alert("Hallo fail");
+    // User is not authenticated with Dropbox.
+		});
+
+        alert("Hallo");
+        DropboxSync.link();
+        alert("Hallo2");
+
+}catch(e){alert(e);}
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';
 	DropboxSync.prototype.uploadFile(optionsarray);
