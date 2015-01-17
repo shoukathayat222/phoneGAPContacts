@@ -198,7 +198,6 @@ function getPhoto(source) {
 function onFail(message) {
   alert('Failed because: ' + message);
 }
-  <script>
 
     function dropbox_linked() { }
 // Called from the onActivityResult method in the plugin when linking is successful.
@@ -211,7 +210,7 @@ function dropbox_fileChange() { }
 
 
 function uploadfile(){
-	
+	alert("Hallo ok 1");
 try{
 	DropboxSync.checkLink(function() { // success
 		alert("Hallo ok");
