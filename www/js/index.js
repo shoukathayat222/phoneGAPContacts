@@ -198,7 +198,11 @@ function getPhoto(source) {
 function onFail(message) {
   alert('Failed because: ' + message);
 }
-
+function uploadfile(){
+	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
+	optionsarray['dropboxPath']='';
+	DropboxSync.prototype.uploadFile(optionsarray);
+}
 /*
 // Called when a photo is successfully retrieved
 //

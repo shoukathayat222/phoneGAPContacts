@@ -15,7 +15,6 @@
             <h1>Playdate Planet Contacts API</h1>
         </div>
         <div class="wrapper">
-
             <ul data-role="listview" data-inset="true">
                 <li data-icon="plus"><a href="add.html">Add New Contact</a></li>
                 <li data-icon="search"><a href="find.html">Find Contact</a></li>
@@ -24,6 +23,8 @@
     			<li><button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> </li>
     			<li><button onclick="getPhoto(navigator.camera.PictureSourceType.PHOTOLIBRARY);">From Photo Library</button></li>
     			<li><button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button></li>
+                <li><button onClick="uploadfile();">DropBox</button></li>
+                
     			<li><img style="display:none;width:60px;height:60px;" id="smallImage" src="" /></li>
     			<li><img style="display:none;" id="largeImage" src="" /></li>
                <!-- <li>
