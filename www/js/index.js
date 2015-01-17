@@ -209,7 +209,9 @@ function dropbox_fileChange() { }
 
 
 function uploadfile(){
-	alert("Hallo ok 1");
+	
+}
+alert("Hallo ok 1");
 try{
 	DropboxSync.checkLink(function() { // success
 		alert("Hallo ok");
@@ -227,7 +229,6 @@ try{
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';
 	DropboxSync.prototype.uploadFile(optionsarray);
-}
 /*
 // Called when a photo is successfully retrieved
 //
