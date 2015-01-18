@@ -8,7 +8,21 @@ function onDeviceReady() {
 	//alert('onDeviceReadystart');
 	pictureSource=navigator.camera.PictureSourceType;
     destinationType=navigator.camera.DestinationType;
-	//alert('onDeviceReadyend');
+	 try{
+		DropboxSync.checkLink(function() { // success
+			alert("Hallo ok");
+		// User is already authenticated with Dropbox.
+		}, function() { // fail
+			alert("Hallo fail");
+		// User is not authenticated with Dropbox.
+			});
+	
+			alert("Hallo");
+			DropboxSync.link();
+			alert("Hallo2");
+	
+	}catch(e){alert(e);}
+	alert('onDeviceReadyend');
 }
 
 $(document).on("pageshow", function () {
@@ -210,23 +224,10 @@ function dropbox_fileChange() { }
 
 function uploadfile(){
 	alert("Hallo ok 1");
-try{
-	DropboxSync.checkLink(function() { // success
-		alert("Hallo ok");
-    // User is already authenticated with Dropbox.
-	}, function() { // fail
-		alert("Hallo fail");
-    // User is not authenticated with Dropbox.
-		});
-
-        alert("Hallo");
-        window.DropboxSync.link();
-        alert("Hallo2");
-
-}catch(e){alert(e);}
+/*
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';
-	DropboxSync.prototype.uploadFile(optionsarray);
+	DropboxSync.prototype.uploadFile(optionsarray);*/
 }
 /*
 // Called when a photo is successfully retrieved
