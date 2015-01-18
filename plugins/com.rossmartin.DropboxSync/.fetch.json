@@ -1,1 +1,1 @@
-{"source":{"type":"registry","id":"com.rossmartin.dropboxsync"}}
+{"source":{"type":"git","url":"https://github.com/rossmartin/phonegap-dropbox-sync-android.git","subdir":"."}}

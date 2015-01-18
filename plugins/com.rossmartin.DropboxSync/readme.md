@@ -30,7 +30,7 @@ function dropbox_fileChange() { }
 // Called by observer in the plugin when a file is changed.
 ```
 
-[You can see how these native callbacks are used in the sample app provided](https://github.com/rossmartin/phonegap-dropbox-sync-android/blob/master/sample/www/js/app.js#l219).
+[You can see how these native callbacks are used in the sample app provided](https://github.com/rossmartin/dropbox-sync-android-sample/blob/master/www/js/app.js#l217).
 Usage
 -----------
 Link to Dropbox:
