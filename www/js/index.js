@@ -8,7 +8,7 @@ function onDeviceReady() {
 	//alert('onDeviceReadystart');
 	pictureSource=navigator.camera.PictureSourceType;
     destinationType=navigator.camera.DestinationType;
-	 try{
+	/* try{
 		DropboxSync.checkLink(function() { // success
 			alert("Hallo ok");
 		// User is already authenticated with Dropbox.
@@ -22,7 +22,7 @@ function onDeviceReady() {
 			alert("Hallo2");
 	
 	}catch(e){alert(e);}
-	alert('onDeviceReadyend');
+	alert('onDeviceReadyend');*/
 }
 
 $(document).on("pageshow", function () {
@@ -226,6 +226,8 @@ function uploadfile(){
 	
 	var src = $('#largeImage').attr('src');
 	alert(src);
+	var src1 = $('#smallImage').attr('src');
+	alert(src1);
 /*
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';
