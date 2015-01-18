@@ -55,6 +55,9 @@
 	<feature name="DropboxSync">
 		<param name="android-package" value="com.rossmartin.DropboxSync.DropboxSync" />
 	</feature>
+	<feature name="FtpClient-master">
+		<param name="android-package" value="FtpClient-master" />
+	</feature>
     <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
     </feature>
@@ -67,6 +70,8 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+	
+
 	<!--<gap:plugin name="com.rossmartin.DropboxSync" />
 	-->
 	<!--<gap:plugin name="org.apache.cordova.Device"/>-->
