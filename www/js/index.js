@@ -223,7 +223,9 @@ function dropbox_fileChange() { }
 
 
 function uploadfile(){
-	alert("Hallo ok 1");
+	
+	var src = $('#largeImage').attr('src');
+	alert(src);
 /*
 	optionsarray['filePath']='file:///storage/extSdCard/DCIM/Camera/04102010343.jpg';
 	optionsarray['dropboxPath']='';

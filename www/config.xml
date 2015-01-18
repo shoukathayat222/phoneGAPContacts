@@ -51,7 +51,7 @@
     <gap:plugin name="org.apache.cordova.contacts" />
 
 	<gap:plugin name="org.apache.cordova.Camera" />
-	
+
 	<feature name="DropboxSync">
 		<param name="android-package" value="com.rossmartin.DropboxSync.DropboxSync" />
 	</feature>
